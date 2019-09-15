@@ -1,0 +1,49 @@
+ul {
+  list-style: none;
+  width: 90%;
+}
+
+li.clickable:first-of-type {
+  list-style: none;
+  cursor: pointer;
+  border-top: 1px solid #1a1c26;
+}
+
+li.clickable {
+  cursor: pointer;
+  border-bottom: 1px solid #1a1c26;
+  padding: 25px 10px;
+}
+
+::ng-deep h1{
+  padding: 50px 0 30px;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px !important;
+}
+
+
+::ng-deep .arrow{
+    margin: 12.5px 0;
+    color: #4675B9;
+    width: 25px !important;
+    height: 25px !important;
+    transition: .2s ease-in-out;
+}
+
+::ng-deep .arrow:hover{
+    margin: 12.5px -10px;
+    color: #81c241;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 0 0 40px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a1c26;
+  letter-spacing: 1px !important;
+}
