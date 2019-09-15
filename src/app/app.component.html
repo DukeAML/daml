@@ -285,7 +285,7 @@
 
   .login-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(#ffffff, 0.35);
+    box-shadow: 0 4px 17px rgba(#ffffff, 0.65);
   }
 
   /* Responsive Styles */
@@ -334,7 +334,9 @@
     <a class="page-link" href="\courses">Courses</a>
     <a class="page-link" href="\gpus">Computing</a>
     <div class="spacer"></div>
-    <a class="login-link" href="\login">DAML Team Login</a>
+    <a *ngIf="!authService.isAuthenticated" class="login-link" href="\login">Client/DAML Login</a>
+    <a *ngIf="authService.isAuthenticated" class="login-link" href="\members">My Home</a>
+    <a *ngIf="authService.isAuthenticated" class="login-link" (click)="onLogout()">Sign Out</a>
   <a aria-label="DAML on LinkedIn" href="https://linkedin.com/company/dukeaml" target="_blank" title="LinkedIn">
 
     <img id="linkedin-logo" height="4" data-name="Logo — FIXED" src="/assets/images/In-White-14@2x.png" viewBox="0 0 200 200">
