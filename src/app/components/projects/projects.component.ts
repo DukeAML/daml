@@ -12,4 +12,8 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
+  public onBrain() {
+    window.open('https://autismcenter.duke.edu/events/seminar-dr-michael-andrews-towards-more-reliable-brain-imaging-findings-autism',
+    '_blank');
+  }
 }

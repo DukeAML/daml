@@ -256,6 +256,37 @@
     width: 1920px;
   }
 
+  .page-link {
+    color:#abb6c2;
+    padding: 10px;
+    background-color: #df691ac0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1vw;
+    border-radius: 10px;
+  }
+
+  .page-link:hover {
+    color:#2b3e50;
+    background-color: #df691a;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(#ffffff, 0.35);
+  }
+
+  .login-link {
+    background-color:#ffffff;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    font-size: 1vw;
+    border-radius: 10px;
+    color:#2b3e50;
+  }
+
+  .login-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(#ffffff, 0.35);
+  }
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -297,8 +328,13 @@
     (click)="onLogo()"
     style="cursor: pointer;"
     />
-
+    <a class="page-link" href="\">Home</a>
+    <a class="page-link" href="\projects">Projects</a>
+    <a class="page-link" href="\papers">Papers</a>
+    <a class="page-link" href="\courses">Courses</a>
+    <a class="page-link" href="\gpus">Computing</a>
     <div class="spacer"></div>
+    <a class="login-link" href="\login">DAML Team Login</a>
   <a aria-label="DAML on LinkedIn" href="https://linkedin.com/company/dukeaml" target="_blank" title="LinkedIn">
 
     <img id="linkedin-logo" height="4" data-name="Logo — FIXED" src="/assets/images/In-White-14@2x.png" viewBox="0 0 200 200">

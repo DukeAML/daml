@@ -30,16 +30,6 @@
     flex: 1;
   }
 
-  .toolbar {
-    height: 60px;
-    margin: -8px;
-    display: flex;
-    align-items: center;
-    background-color: #9ac6f1;
-    color: white;
-    font-weight: 600;
-  }
-
   .toolbar img {
     margin: 0 16px;
   }
@@ -121,14 +111,14 @@
   }
 
   .card.highlight-card {
-    background-color: #77b6f5;
+    background-color: #2b3e50;
     color: white;
     font-weight: 600;
     border: none;
     width: 100%;
     min-width: 40%;
     position: relative;
-    font-size: 1.5vw;
+    font-size: 2vw;
     height: 40px;
   }
 
@@ -294,7 +284,9 @@
   }
 
   .paper_item {
-    width: 80%
+    width: 80%;
+    cursor: pointer;
+    color: #2b3e50;
   }
   .paper_item_cat{
     float: left;
@@ -345,11 +337,11 @@
   <br>
   <p>Duke was represented in over <span style="font-weight:600">22 papers</span> accepted for submission in the 2019 NeurIPS Proceedings! Check out the papers and people involved below.</p>
   <br>
-  <div class="paper_item">
+  <div class="paper_item" (click)=onClickDan()>
     <hr>
     <h5 class="paper_item_cat">Image Recognition</h5><h5 class="paper_item_conf">NeurIPS 2019 Spotlight</h5>
     <br><br>
-    <h3 class="paper_item_title">This Looks Like That: Deep Learning for Interpretable Image Recognition</h3><a href="https://arxiv.org/abs/1806.10574"><img class="paper_item_pdf" src="assets/images/pdf_icon.png"></a>
+    <h3 class="paper_item_title">This Looks Like That: Deep Learning for Interpretable Image Recognition</h3><img class="paper_item_pdf" src="assets/images/pdf_icon.png">
     <br><br>
     <h4 class="paper_item_authors">Chaofan Chen, Oscar Li, Daniel Tao, Alina Barnett, Cynthia Rudin</h4>
   </div>

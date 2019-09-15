@@ -118,19 +118,15 @@
   }
 
   .card.highlight-card {
-    background-color: #77b6f5;
+    background-color: #2b3e50;
     color: white;
     font-weight: 600;
     border: none;
     width: 700px;
     min-width: 40%;
     position: relative;
-    font-size: 1.5vw;
+    font-size: 2vw;
     height: 40px;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
   }
 
   img#brain {
@@ -258,6 +254,11 @@
     width: 1920px;
   }
 
+  .project-list {
+    cursor: pointer;
+    color: #2b3e50;
+  }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -292,7 +293,6 @@
 
 <div class="content">
   <div class="card highlight-card card-small">
-    <img id="brain" src="assets/images/brain.svg">
     <span>Projects</span>
 
     <svg id="rocket-smoke" alt="Rocket Ship Smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
@@ -301,10 +301,9 @@
   </div>
 
   <ul style="list-style-type:none; text-align:center;" >
-  <li class="project-list">
+  <li class="project-list" (click)=onBrain()>
     <div class="menu-item-info">
       <h2 class="menu-item-name">Brain CT Cleansing</h2>
-      <span class="menu-item-price"><a href="https://github.com/DukeAML/daml" target="_blank">Github</a></span>
       <h4 class="menu-item-description">Brain Artifact detection, from an executive in the Neuroscience Department (Dr. Andrew Michael)</h4>
   <div class="image">
     <img src="/assets/images/brain.jpg" alt="Smiley brain" height="300em" width="450em">
@@ -314,7 +313,6 @@
   <li class="project-list">
     <div class="menu-item-info">
       <h2 class="menu-item-name">Aircraft Maintenance</h2>
-      <span class="menu-item-price"><a href="https://github.com/DukeAML/daml" target="_blank">Github</a></span>
       <h4 class="menu-item-description">Predicting and scheduling aircraft maintenance (US Air Force)</h4>
   <div class="image">
     <img src="/assets/images/aircraft.jpg" alt="Smiley Aircraft" height="300em" width="450em">
@@ -324,7 +322,6 @@
   <li class="project-list">
     <div class="menu-item-info">
       <h2 class="menu-item-name">Fighter Pilot Evaluation</h2>
-      <span class="menu-item-price"><a href="https://github.com/DukeAML/daml" target="_blank">Github</a></span>
       <h4 class="menu-item-description">Working with an Air Force data scientist to help better evaluate and predict fighter pilot performance while they are in training (US Air Force)</h4>
   <div class="image">
     <img src="/assets/images/pilot.jpg" alt="Smiley Pilot" height="300em" width="450em">

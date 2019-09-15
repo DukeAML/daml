@@ -12,4 +12,7 @@ export class PapersComponent implements OnInit {
   ngOnInit() {
   }
 
+  public onClickDan() {
+    window.open('https://arxiv.org/abs/1806.10574', '_blank');
+  }
 }
