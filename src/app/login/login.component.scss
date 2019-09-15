@@ -1,0 +1,60 @@
+
+
+.container {
+  content: center;
+}
+.body {
+  content: center;
+}
+.login-button {
+  position:absolute;
+  top: 45vh;
+  color: #2b3e50;
+  background-color: #df691a;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: 25pt;
+  border: 0px;
+  font-weight: bold;
+  padding: 15px;
+  }
+  .login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(#000000, 0.35);
+  }
+input.email {
+  width: 50vw;
+  height: 30px;
+  color: #2b3e50;
+  border-color: #2b3e50;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 2em;
+}
+
+input.pw, input.pw:active, input.pw:focus {
+  width: 50vw;
+  height: 30px;
+  font-size: 2em;
+  color: #2b3e50;
+  border-color: #2b3e50;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@-webkit-keyframes autofill {
+  to {
+  color: #666;
+  background: transparent; } }
+
+  @keyframes autofill {
+  to {
+  color: #666;
+  background: transparent; } }
+
+  input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
