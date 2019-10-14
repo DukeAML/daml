@@ -1,0 +1,90 @@
+
+.person-container {
+  width: 100%;
+  min-height: 50px;
+  background-color: #58788c;
+  display: inline-block;
+  vertical-align: middle;
+}
+.person-container a {
+  color: #eaeaea !important;
+}
+.image-container-small {
+  float:left;
+  width:20%;
+  vertical-align: middle;
+}
+.image-container-big {
+  float:left;
+  width:30%;
+  vertical-align: middle;
+}
+.image-cropper-small {
+  width:15vw;
+  height:15vw;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.image-cropper-big {
+  width:20vw;
+  height:20vw;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.text-container-big {
+  float: right;
+  width: 75%;
+  margin-right: 2%;
+}
+.text-container-small {
+  float: right;
+  width: 65%;
+  margin-right: 2%;
+}
+.list-item {
+  margin-top: 5%;
+  padding: 10px;
+  background-color: #eaeaea;
+  opacity: 0.4;
+  border-radius: 20%;
+  overflow: hidden;
+}
+.skill-list {
+  list-style: none;
+  width: 50%;
+}
+.skill-container {
+  color: #424242;
+  text-align: center;
+  font-size: 18pt;
+  margin-left: 20%;
+}
+.title-container {
+  text-align: right;
+  margin-top: 5vh;
+  font-size: 24pt;
+  border-bottom: 2px solid white;
+}
+.team-container {
+  font-size: 30pt;
+  text-align: right;
+}
+.dorn-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: 0%;
+  margin-top: 0%;
+  height: 137%;
+  width: auto;
+}
+
+

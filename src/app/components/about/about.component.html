@@ -1,0 +1,20 @@
+<div *ngFor="let member of members; let i = index;" class="person-container" (click)="openmember=i; isOpen=!isOpen" fxLayout="row" fxLayoutAlign="center center">
+  <!-- <a target="_blank" [href]="member.resume"> -->
+    <div fxFlex="30" [class]="openmember==i && isOpen ? 'image-container-big' : 'image-container-small'">
+      <div [class] = "openmember==i && isOpen? 'image-cropper-big' : 'image-cropper-small'">
+          <img [src]='member.image' class = "dorn-pic">
+      </div>
+  </div>
+  <div fxFlex="70" [class] = "openmember==i && isOpen? 'text-container-small' : 'text-container-big'" fxLayout = "column" fxLayoutAlign = "space-evenly center">
+      <div class="title-container">{{member.name}} &nbsp;<a target="_blank" [href]="member.linkedin"><img src="/assets/images/In-White-14@2x.png"/></a></div>
+      <div class="team-container">
+        {{member.team}}
+      </div>
+      <div [@openClose]="openmember==i && isOpen? 'open' : 'closed'" class="skill-container" fxLayout = "column" fxLayoutAlign = "center">
+        <ul class="skill-list">
+          <li *ngFor="let bullet of member.bullets" class="list-item">{{bullet}}</li>
+        </ul>
+      </div>
+  </div>
+  <!-- </a> -->
+</div>

@@ -9,6 +9,7 @@ import { MemberComponent } from './components/member/member.component';
 import { MembersResolver } from './components/member/members.resolver';
 import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './components/about/about.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'papers', component: PapersComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'courses', component: CoursesComponent},
-  {path: 'members', component: MemberComponent, resolve: {data: MembersResolver }}
+  {path: 'members', component: MemberComponent, resolve: {data: MembersResolver }},
+  {path: 'about', component: AboutComponent}
 ];
 
 @NgModule({

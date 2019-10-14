@@ -15,7 +15,7 @@ export class GpusComponent implements OnInit {
 
   ngOnInit() {
     CanvasJS.addColorSet('colors',
-    ['#abb6c2', '#2b3e50', '#df691a']);
+    ['#58788c', '#eaeaea', '#5cab7c']);
     const chart = new CanvasJS.Chart('chartContainer', {
       colorSet: 'colors',
       backgroundColor: null,

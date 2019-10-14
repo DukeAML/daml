@@ -6,12 +6,12 @@ ul {
 li.clickable:first-of-type {
   list-style: none;
   cursor: pointer;
-  border-top: 1px solid #1a1c26;
+  border-top: 1px solid #424242;
 }
 
 li.clickable {
   cursor: pointer;
-  border-bottom: 1px solid #1a1c26;
+  border-bottom: 1px solid #424242;
   padding: 25px 10px;
 }
 
@@ -26,7 +26,7 @@ li.clickable {
 
 ::ng-deep .arrow{
     margin: 12.5px 0;
-    color: #4675B9;
+    color: #58788c;
     width: 25px !important;
     height: 25px !important;
     transition: .2s ease-in-out;
@@ -34,7 +34,7 @@ li.clickable {
 
 ::ng-deep .arrow:hover{
     margin: 12.5px -10px;
-    color: #81c241;
+    color: #5cab7c;
 }
 
 h3 {
@@ -44,6 +44,6 @@ h3 {
   padding: 0 0 0 40px;
   font-size: 25px;
   font-weight: 700;
-  color: #1a1c26;
+  color: #424242;
   letter-spacing: 1px !important;
 }
